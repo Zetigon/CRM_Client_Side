@@ -1,14 +1,15 @@
-import React from 'react'
-import { Navigate, Outlet } from 'react-router-dom'
-import appConfig from 'configs/app.config'
-import useAuth from 'utils/hooks/useAuth'
+import NavBar from "../Components/NAVIGATION/NAVBAR/Navbar";
+import React from 'react';
+import { Router, Route } from 'react-router-dom';
 
-const { authenticatedEntryPath } = appConfig
 
-const PublicRoute = () => {
-    const { authenticated } = useAuth()
+const Routes = () => {
+  return (
+    <Router>
+      <Route exact path="/" component={NavBar} />
+      
+    </Router>
+  );
+};
 
-    return authenticated ? <Navigate to={authenticatedEntryPath} /> : <Outlet />
-}
-
-export default PublicRoute
+export default Routes;
