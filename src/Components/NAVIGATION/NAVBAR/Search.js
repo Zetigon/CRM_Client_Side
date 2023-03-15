@@ -17,7 +17,6 @@ const recommendedSearch = [
             {
                 title: 'Documentation',
                 url: '/docs/documentation/introduction',
-                icon: 'documentation',
                 category: 'Docs',
                 categoryTitle: 'Docs',
             },
@@ -31,7 +30,6 @@ const recommendedSearch = [
             {
                 title: 'Button',
                 url: '/ui-components/button',
-                icon: 'common',
                 category: 'Common',
                 categoryTitle: 'UI Components',
             },

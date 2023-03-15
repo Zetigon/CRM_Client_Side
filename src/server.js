@@ -5,9 +5,12 @@ function renderFullPage(html, css) {
   /* ... */
 }
 
+
+
 function handleRender(req, res) {
   /* ... */
 }
+
 
 const app = express();
 

@@ -5,20 +5,31 @@
  * @copyright APPI SASU
  */
 import './App.css';
-import createRoot from "react-dom";
+import Home from './Components/HOME/home';
+import { Routes, Route } from "react-router-dom";
 
-import NavBar from "./Components/NAVIGATION/NAVBAR/Navbar";
-import Routes from './Routes/PublicRoute'
-
+import { DynamicItem, Sidebar, dummyData } from "./Components/NAVIGATION/";
+import Crm from './Components/CRM/crm';
+import Dashboard from './Components/DASHBOARD/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-  <Routes>
-  
-  <NavBar/>
-    
-  </Routes>
+      <div id="main">
+      <Sidebar>
+        <Routes>
+          <Route path="/" element={<Dashboard/>} />
+          {dummyData &&
+            dummyData.map((item, index) => (
+              <Route
+                key={index}
+                path={item.path}
+                element={<DynamicItem page={item.title} />}
+              />
+            ))}
+
+            <Route path="/crm" element={<Crm/>}/>
+        </Routes>
+      </Sidebar>
     </div>
   );
 }
