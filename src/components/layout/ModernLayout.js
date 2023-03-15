@@ -20,7 +20,7 @@ const HeaderActionsEnd = () => {
     return (
         <>
             <SidePanel />
-            <UserDropdown hoverable={false} />
+            <UserDropdown hoverable={true} />
         </>
     )
 }
@@ -32,7 +32,7 @@ const ModernLayout = (props) => {
                 <SideNav />
                 <div className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full bg-white dark:bg-gray-800 border-l border-gray-200 dark:border-gray-700">
                     <Header
-                        className="border-b border-gray-200 dark:border-gray-700"
+                        className="border-b border-gray-200 dark:border-gray-500"
                         headerEnd={<HeaderActionsEnd />}
                         headerStart={<HeaderActionsStart />}
                     />

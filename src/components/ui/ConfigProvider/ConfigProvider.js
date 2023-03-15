@@ -2,14 +2,20 @@ import { createContext, useContext } from 'react'
 import { SIZES } from '../utils/constant'
 
 export const defaultConfig = {
-    themeColor: 'indigo',
-    direction: 'ltr',
-    mode: 'light',
-    locale: 'en',
-    primaryColorLevel: 600,
-    cardBordered: false,
-    controlSize: SIZES.MD,
-    navMode: 'light',
+ 
+  "themeColor": "green",
+  "direction": "ltr",
+  
+  "primaryColorLevel": 900,
+  "cardBordered": true,
+  "panelExpand": false,
+  "controlSize": "md",
+  "navMode": "default",
+  "layout": {
+    "type": "modern",
+    "sideNavCollapse": true
+  
+},
 }
 
 export const ConfigContext = createContext(defaultConfig)

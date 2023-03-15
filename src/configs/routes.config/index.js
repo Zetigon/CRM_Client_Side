@@ -5,21 +5,21 @@ export const publicRoutes = [...authRoute]
 
 export const protectedRoutes = [
     {
-        key: 'home',
+        key: 'Dashboard',
         path: '/home',
         component: React.lazy(() => import('views/Home')),
         authority: [],
     },
     /** Example purpose only, please remove */
     {
-        key: 'singleMenuItem',
-        path: '/single-menu-view',
+        key: 'ProjectMenu',
+        path: '/projects',
         component: React.lazy(() => import('views/demo/SingleMenuView')),
         authority: [],
     },
     {
-        key: 'collapseMenu.item1',
-        path: '/collapse-menu-item-view-1',
+        key: 'DashboardMenu',
+        path: '/profile/Dashboard',
         component: React.lazy(() => import('views/demo/CollapseMenuItemView1')),
         authority: [],
     },

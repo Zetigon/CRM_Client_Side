@@ -1,7 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import { Affix, Chart } from 'components/shared';
 const Home = () => {
-    return <div>Home</div>
+    return <div>
+        <Affix/>
+
+
+    </div>
 }
 
 export default Home

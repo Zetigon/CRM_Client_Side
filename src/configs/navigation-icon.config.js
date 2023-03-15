@@ -5,6 +5,8 @@ import {
     HiOutlineTemplate,
     HiOutlineViewGridAdd,
     HiOutlineHome,
+    HiViewGrid,
+    HiOutlineChartSquareBar,
 } from 'react-icons/hi'
 
 const navigationIcon = {
@@ -13,6 +15,8 @@ const navigationIcon = {
     collapseMenu: <HiOutlineTemplate />,
     groupSingleMenu: <HiOutlineDesktopComputer />,
     groupCollapseMenu: <HiOutlineColorSwatch />,
+    dashboard:<HiViewGrid/>,
+    projects:<HiOutlineChartSquareBar/>
 }
 
 export default navigationIcon

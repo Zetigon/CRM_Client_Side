@@ -6,7 +6,7 @@ const Cover = ({ children, content, ...rest }) => {
     return (
         <div className="grid lg:grid-cols-3 h-full">
             <div
-                className="col-span-2 bg-no-repeat bg-cover py-6 px-16 flex-col justify-between bg-white dark:bg-gray-800 hidden lg:flex"
+                className="col-span-2 bg-no-repeat bg-cover py-6 px-16 flex-col justify-between bg-white dark:bg-gray-900 hidden lg:flex"
                 style={{
                     backgroundImage: `url('/img/others/auth-cover-bg.jpg')`,
                 }}
@@ -14,12 +14,10 @@ const Cover = ({ children, content, ...rest }) => {
                 <Logo mode="dark" />
                 <div>
                     <h3 className="text-white mb-4">
-                        Jump start your project with Elstar
+                     
                     </h3>
                     <p className="text-lg text-white opacity-80 max-w-[700px]">
-                        Elstar comes with a complete set of UI components
-                        crafted with Tailwind CSS, it fulfilled most of the use
-                        case to create modern and beautiful UI and application
+                     
                     </p>
                 </div>
                 <span className="text-white">

@@ -28,7 +28,7 @@ const Logo = (props) => {
 Logo.defaultProps = {
     mode: 'light',
     type: 'full',
-    logoWidth: 'auto',
+    logoWidth: '35',
 }
 
 Logo.propTypes = {

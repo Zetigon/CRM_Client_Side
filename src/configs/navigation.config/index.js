@@ -5,51 +5,54 @@ import {
 } from 'constants/navigation.constant'
 
 const navigationConfig = [
-    {
-        key: 'home',
+ 
+   {    key: 'dashMenu',
         path: '/home',
-        title: 'Home',
-        translateKey: 'nav.home',
-        icon: 'home',
+        title: 'Dashboard',
+        translateKey: 'dashMenu',
+        icon: 'dashboard',
         type: NAV_ITEM_TYPE_ITEM,
         authority: [],
-        subMenu: [],
-    },
-    /** Example purpose only, please remove */
-    {
-        key: 'singleMenuItem',
-        path: '/single-menu-view',
-        title: 'Single menu item',
-        translateKey: 'nav.singleMenuItem',
-        icon: 'singleMenu',
-        type: NAV_ITEM_TYPE_ITEM,
-        authority: [],
-        subMenu: [],
-    },
-    {
-        key: 'collapseMenu',
-        path: '',
-        title: 'Collapse Menu',
-        translateKey: 'nav.collapseMenu.collapseMenu',
-        icon: 'collapseMenu',
+        subMenu:[]
+
+},
+
+{
+
+
+        key: 'groupMenu',
+        path: '/projects',
+        title: 'Projects',
+        translateKey: 'nav.collapseMenu.projectMenu',
+        icon: 'projects',
         type: NAV_ITEM_TYPE_COLLAPSE,
         authority: [],
         subMenu: [
             {
-                key: 'collapseMenu.item1',
-                path: '/collapse-menu-item-view-1',
-                title: 'Collapse menu item 1',
-                translateKey: 'nav.collapseMenu.item1',
+                key: 'collapseMenu',
+                path: '/dashboard',
+                title: 'Dashboard',
+                translateKey: 'nav.collapseMenu.dashMenu',
                 icon: '',
                 type: NAV_ITEM_TYPE_ITEM,
                 authority: [],
                 subMenu: [],
             },
             {
-                key: 'collapseMenu.item2',
+                key: 'collapseMenu',
                 path: '/collapse-menu-item-view-2',
-                title: 'Collapse menu item 2',
-                translateKey: 'nav.collapseMenu.item2',
+                title: 'Project List',
+                translateKey: 'nav.collapseMenu.projMenu',
+                icon: '',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [],
+                subMenu: [],
+            },
+             {
+                key: 'collapseMenu.item3',
+                path: '/collapse-menu-item-view-3',
+                title: 'Screen Board',
+                translateKey: 'nav.collapseMenu.item3',
                 icon: '',
                 type: NAV_ITEM_TYPE_ITEM,
                 authority: [],
@@ -58,20 +61,20 @@ const navigationConfig = [
         ],
     },
     {
-        key: 'groupMenu',
-        path: '',
-        title: 'Group Menu',
-        translateKey: 'nav.groupMenu.groupMenu',
-        icon: '',
+        key: 'crmMenu',
+        path: '/crm',
+        title: 'CRM',
+        translateKey: 'crm',
+        icon: 'app-icon',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [],
         subMenu: [
             {
                 key: 'groupMenu.single',
-                path: '/group-single-menu-item-view',
-                title: 'Group single menu item',
-                translateKey: 'nav.groupMenu.single',
-                icon: 'groupSingleMenu',
+                path: '/crm/dashboard',
+                title: 'Dashboard',
+                translateKey: 'dashboard',
+                icon: 'dashboard',
                 type: NAV_ITEM_TYPE_ITEM,
                 authority: [],
                 subMenu: [],

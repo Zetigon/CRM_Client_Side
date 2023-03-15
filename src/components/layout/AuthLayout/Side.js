@@ -18,19 +18,21 @@ const Side = ({ children, content, ...rest }) => {
                         <Avatar
                             className="border-2 border-white"
                             shape="circle"
-                            src="/img/avatars/thumb-10.jpg"
+                            src="/img/avatars/Levy.jpg"
                         />
                         <div className="text-white">
                             <div className="font-semibold text-base">
-                                Brittany Hale
+                               Milan Levy
                             </div>
-                            <span className="opacity-80">CTO, Onward</span>
+                            <span className="opacity-80">CEO,Founder</span>
                         </div>
                     </div>
-                    <p className="text-lg text-white opacity-80">
-                        Elstar comes with a complete set of UI components
-                        crafted with Tailwind CSS, it fulfilled most of the use
-                        case to create modern and beautiful UI and application
+                    <p className="text-md text-white opacity-80">
+                     Milan Levy is the CEO and founder of Zetigon. He has a long history of solving problems related to digital, 
+                     systems, and media, and has worked with over 100 clients on hundreds of projects around the globe. Milan is a
+                      skilled problem-solver with a strong business acumen and expertise in digital technologies.
+
+                     
                     </p>
                 </div>
                 <span className="text-white">

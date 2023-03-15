@@ -121,7 +121,7 @@ SideNav.propTypes = {
 }
 
 SideNav.defaultProps = {
-    themed: false,
+    themed: true,
     darkMode: false,
     themeColor: '',
 }
