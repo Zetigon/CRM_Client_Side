@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import DashCard from './cardsView/dashCard'
 
 function Dashboard() {
   return (
-    <div>
+    <div className='mainCards'>
+        <div className="dataCard">
+
+            <DashCard/>
+
+        </div>
       
     </div>
  )
