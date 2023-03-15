@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Item = (props) => {
   const { page } = props;
-  if (page === Item) {
+  if (page === page ) {
     return <div id="page">{page}</div>;
   } else {
     return (

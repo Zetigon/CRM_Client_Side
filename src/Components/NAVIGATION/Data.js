@@ -3,7 +3,7 @@ import React from "react";
 
 export const SIDEBAR_DATA = [
   {
-    title: "Home",
+    title: "Dashboard",
     path: "/",
     cName: "nav-text",
   },
@@ -65,11 +65,7 @@ export const SIDEBAR_DATA = [
     cName: "nav-text",
    },
 
-  {
-    title: "Manual-Payments",
-    path: "/manual-payments",
-    cName: "nav-text",
-  },
+
 
   {
     title: "Subscription-Plan",
@@ -78,8 +74,8 @@ export const SIDEBAR_DATA = [
   },
 
   {
-    title: "E-mail",
-    path: "/e-mails",
+    title: "Marketing",
+    path: "/marketing",
     cName: "nav-text",
   },
 
