@@ -10,7 +10,7 @@ export const defaultConfig = {
   "cardBordered": true,
   "panelExpand": false,
   "controlSize": "md",
-  "navMode": "default",
+  "navMode": "themed",
   "layout": {
     "type": "modern",
     "sideNavCollapse": true
