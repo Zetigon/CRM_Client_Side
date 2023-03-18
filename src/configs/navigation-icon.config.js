@@ -7,6 +7,15 @@ import {
     HiOutlineHome,
     HiViewGrid,
     HiOutlineChartSquareBar,
+    HiOutlineUserGroup,
+    HiOutlineCog,
+    HiOutlineBookOpen,
+    HiOutlineUsers,
+    HiOutlineCurrencyDollar,
+    HiOutlineMail,
+    HiOutlineDocumentText,
+    HiOutlineUserCircle
+
 } from 'react-icons/hi'
 
 const navigationIcon = {
@@ -16,7 +25,16 @@ const navigationIcon = {
     groupSingleMenu: <HiOutlineDesktopComputer />,
     groupCollapseMenu: <HiOutlineColorSwatch />,
     dashboard:<HiViewGrid/>,
-    projects:<HiOutlineChartSquareBar/>
+    projects:<HiOutlineChartSquareBar/>,
+    userCrm:<HiOutlineUserGroup/>,
+    settingIcon: <HiOutlineCog/>,
+    knowledge:<HiOutlineBookOpen/>,
+    peopleIcon:<HiOutlineUsers/>,
+    paymentIcon: <HiOutlineCurrencyDollar/>,
+    marketingIcon: <HiOutlineMail/>,
+    reportIcon:<HiOutlineDocumentText/>,
+    userProfileIcon: <HiOutlineUserCircle/>
+
 }
 
 export default navigationIcon

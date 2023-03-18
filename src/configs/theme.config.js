@@ -6,18 +6,19 @@ import { THEME_ENUM } from 'constants/theme.constant'
  */
 
 export const themeConfig = {
+
   "themeColor": "green",
   "direction": "ltr",
-  "mode": "light",
+  "mode": "default",
   "primaryColorLevel": 600,
   "cardBordered": true,
   "panelExpand": false,
   "controlSize": "md",
   "navMode": "themed",
   "layout": {
-    "type": "modern",
+    "type": "classic",
     "sideNavCollapse": false
-  
-  },
+
+},
 
 }

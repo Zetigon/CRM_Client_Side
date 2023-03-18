@@ -66,7 +66,7 @@ const MobileNav = () => {
                         <MobileNavToggle toggled={isOpen} />
                     </div>
                     <Drawer
-                        title="Navigation"
+                        title="CRM DASHBOARD"
                         isOpen={isOpen}
                         onClose={onDrawerClose}
                         onRequestClose={onDrawerClose}
