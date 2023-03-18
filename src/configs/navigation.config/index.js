@@ -274,7 +274,7 @@ const navigationConfig = [
 
                     {
                         key: 'groupMenu.collapse.reportMenu',
-                        path: '/people/reports',
+                        path: '/group-collapse-menu-item-view-2',
                         title: 'Report',
                         translateKey: 'nav.groupMenu.collapse.reportMenu',
                         icon: '',

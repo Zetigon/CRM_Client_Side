@@ -11,7 +11,7 @@ export const themeConfig = {
   "direction": "ltr",
   "mode": "default",
   "primaryColorLevel": 600,
-  "cardBordered": true,
+  "cardBordered": false,
   "panelExpand": false,
   "controlSize": "md",
   "navMode": "themed",
