@@ -1,63 +1,64 @@
 import React from 'react'
-import { Card, Table} from 'components/ui';
-import {HiOutlineUsers,HiOutlineUser,HiOutlineUserPlus} from 'react-icons/hi2'
+import { Card} from 'components/ui';
+import {HiOutlineUserGroup,HiOutlineUser,HiOutlineUserPlus} from 'react-icons/hi2'
 import Filtering from './Table/accounts_table';
 
 function accounts() {
   return (
 
-<div className='container-wrap'>
+<div className=' container-wrap'>
 
 {/* ACCOUNTS_OVERALL_STATUS */}
-<h3 className='font-bold text-capitalized'>
-Accounts
+<h3 className='text-slate-400  font-semibold'>
+ACCOUNTS
 </h3>
 <br/>
 
-<div className="grid grid-cols-3 gap-3 bg-light">
+<div className="flex-1 grid grid-cols-3 gap-3 bg-light">
 
 {/* Total Number of  Accounts */}
-<Card color="secondary" className='cards text-md text-slate-600 font-mono mb-3 dark:text-slate-500' >
-  <center className='justify-item-center'><HiOutlineUsers/></center>
-<small>Total</small> Accounts
-
-<div className='total-container_grid'>
-<div className='total_container'>
-      
-  
-
+<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
+  <div className='total_container text-center text-4xl text-slate-400'>
+     
 {/* Total_Accounts */}
-<b>2343 </b>
-</div>
+  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
+
+  <h4 className='text-left -bottom-4 text-slate-400'>Total Accounts</h4>    
+  
+ <center><HiOutlineUserGroup className='text-center avatar-circle  pb-2' size={75}/></center> 
 
 </div>
 </Card>
 
 {/* Active Accounts */}
-<Card className='cards text-md text-slate-600  font-mono mb-3 dark:text-slate-500'>
-  <center className='justify-item-center'><HiOutlineUser/></center>
+<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
+  <div className='total_container text-center text-4xl text-slate-400'>
+     
+{/* Total_Accounts */}
+  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
 
-<small>Active</small> Accounts
+  <h4 className='text-left -bottom-4 text-slate-400'>
+   <span className='fluid  w-20  p-1 radius-15'>
+    Active Accounts</span> 
+    </h4>    
+  
+ <center><HiOutlineUser className='bg-blue-400 text-white text-center avatar-circle  pb-2' size={75}/></center> 
 
-<div className='total-container_grid'>
-<span className='total-container'>
-<b>548</b>
-</span>
 </div>
 </Card>
 
 {/* New Accounts */}
-<Card className='cards text-md text-slate-600  font-mono mb-2 dark:text-slate-500'>
-    <center className='justify-item-center'><HiOutlineUserPlus/></center>
+<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
+  <div className='total_container text-center text-4xl text-slate-400'>
+     
+{/* Total_Accounts */}
+  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
 
-<small>New</small> Accounts
+  <h4 className='text-left -bottom-4 text-slate-400'>New Accounts</h4>    
+  
+ <center><HiOutlineUserPlus className='bg-green-400 text-white text-center avatar-circle  pb-2' size={75}/></center> 
 
-<div className='total-container_grid'>
-<span className='total-container'>
-<b>5,4879</b>
-</span>
 </div>
-
 </Card>
 
 </div>

@@ -17,6 +17,8 @@ import Button from 'components/ui/Buttons'
 import { HiOutlineUserAdd } from 'react-icons/hi'
 const { Tr, Th, Td, THead, TBody, Sorter } = Table
 
+
+
 function DebouncedInput({
     value: initialValue,
     onChange,
@@ -48,7 +50,7 @@ function DebouncedInput({
                 />
                 <span className='flex ml-2'>
                     <Button variant="solid" color="green-500"  className="text-center right-2" icon={<HiOutlineUserAdd/>}>
-                        Add New
+                        Add Account
                     </Button>
                 </span>  
             </div>
@@ -69,19 +71,16 @@ const fuzzyFilter = (row, columnId, value, addMeta) => {
     return itemRank.passed
 }
 
-const Filtering = () => {
+const Filtering_Contacts = () => {
     const [columnFilters, setColumnFilters] = React.useState([])
     const [globalFilter, setGlobalFilter] = React.useState('')
 
     const columns = useMemo(
         () => [
-            { header: 'Account Name', accessorKey: 'accountName' },
-            { header: 'Account Status', accessorKey: 'accountStatus' },
-            { header: 'Account Address', accessorKey: 'accountAddress' },
-            { header: 'Primary Contact', accessorKey: 'primaryContact' },
-            
-
-
+            { header: '', accessorKey: '' },
+            { header: '', accessorKey: ''},
+            { header: '', accessorKey: '' },
+            { header: '', accessorKey: 't' },
         ],
         []
     )
@@ -183,4 +182,4 @@ const Filtering = () => {
     )
 }
 
-export default Filtering
+export default Filtering_Contacts
