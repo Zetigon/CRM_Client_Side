@@ -1,68 +1,79 @@
 import React from 'react'
-
-
+import { Card, Table} from 'components/ui';
+import {HiOutlineUsers,HiOutlineUser,HiOutlineUserPlus} from 'react-icons/hi2'
+import Filtering from './Table/accounts_table';
 
 function accounts() {
   return (
 
 <div className='container-wrap'>
-<span className='container-wrap'>
-  
-</span>
 
-<h3 className='text-mute-center'>
+{/* ACCOUNTS_OVERALL_STATUS */}
+<h3 className='font-bold text-capitalized'>
 Accounts
 </h3>
 <br/>
 
-
-
-
-<div className="grid grid-cols-3 gap-3 bg-amber-200">
+<div className="grid grid-cols-3 gap-3 bg-light">
 
 {/* Total Number of  Accounts */}
-<div className='cards'>
-
-
+<Card color="secondary" className='cards text-md text-slate-600 font-mono mb-3 dark:text-slate-500' >
+  <center className='justify-item-center'><HiOutlineUsers/></center>
 <small>Total</small> Accounts
 
 <div className='total-container_grid'>
-<span className='total-container'>
-  457
-</span>
+<div className='total_container'>
+      
+  
+
+{/* Total_Accounts */}
+<b>2343 </b>
 </div>
 
 </div>
-
-
+</Card>
 
 {/* Active Accounts */}
+<Card className='cards text-md text-slate-600  font-mono mb-3 dark:text-slate-500'>
+  <center className='justify-item-center'><HiOutlineUser/></center>
 
-<div className='cards'>
 <small>Active</small> Accounts
 
 <div className='total-container_grid'>
 <span className='total-container'>
-  1,457
+<b>548</b>
 </span>
 </div>
-
-
-
-
-</div>
-
+</Card>
 
 {/* New Accounts */}
-<div className='cards'>
+<Card className='cards text-md text-slate-600  font-mono mb-2 dark:text-slate-500'>
+    <center className='justify-item-center'><HiOutlineUserPlus/></center>
+
 <small>New</small> Accounts
 
 <div className='total-container_grid'>
 <span className='total-container'>
-  57
+<b>5,4879</b>
 </span>
 </div>
 
+</Card>
+
+</div>
+{/* END ACCOUNTS_OVERALL_STATUS */}
+
+
+{/* ========================================= TABLE SECTION ======================================*/}
+
+
+
+{/* {{TABLE_ACCOUNTS}} */}
+<div className='container-wrap' id='account_table'>
+
+  <Filtering/>
+
+
 </div>
 
 
@@ -70,7 +81,6 @@ Accounts
 
 
 
-</div>
 
 
 </div>

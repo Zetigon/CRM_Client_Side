@@ -7,18 +7,18 @@ import { THEME_ENUM } from 'constants/theme.constant'
 
 export const themeConfig = {
 
-  "themeColor": "green",
-  "direction": "ltr",
-  "mode": "default",
-  "primaryColorLevel": 600,
-  "cardBordered": false,
-  "panelExpand": false,
-  "controlSize": "md",
-  "navMode": "themed",
-  "layout": {
-    "type": "classic",
-    "sideNavCollapse": false
-
-},
+    themeColor: 'blue',
+    direction: THEME_ENUM.DIR_LTR,
+    mode: THEME_ENUM.MODE_LIGHT,
+    locale: 'en',
+    primaryColorLevel: 500,
+    cardBordered: false,
+    panelExpand: false,
+    controlSize: 'lg',
+    navMode: THEME_ENUM.NAV_MODE_THEMED,
+    layout: {
+        type: THEME_ENUM.LAYOUT_TYPE_CLASSIC,
+        sideNavCollapse: false,
+    },
 
 }

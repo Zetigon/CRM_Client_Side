@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import { HEADER_HEIGHT_CLASS } from 'constants/theme.constant'
+import { Search } from './Search'
 
 const Header = (props) => {
     const { headerStart, headerEnd, headerMiddle, className, container } = props
@@ -16,8 +17,10 @@ const Header = (props) => {
                 )}
             >
                 <div className="header-action header-action-start">
-                    {headerStart}
-                </div>
+                {headerStart}
+                 <Search/>            
+                </div> 
+                 
                 {headerMiddle && (
                     <div className="header-action header-action-middle">
                         {headerMiddle}

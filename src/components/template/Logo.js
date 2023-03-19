@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { APP_NAME } from 'constants/app.constant'
+import { MODE_LIGHT } from 'constants/theme.constant'
 
 const LOGO_SRC_PATH = '/img/logo/'
 
@@ -26,9 +27,9 @@ const Logo = (props) => {
 }
 
 Logo.defaultProps = {
-    mode: '',
-    type: 'streamline',
-    logoWidth: '25',
+    mode: MODE_LIGHT,
+    type: 'full',
+    logoWidth: '250',
 }
 
 Logo.propTypes = {

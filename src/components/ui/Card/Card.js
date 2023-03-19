@@ -27,7 +27,7 @@ const Card = React.forwardRef((props, ref) => {
         'card',
         className,
         bordered ? `card-border` : `card-shadow`,
-        clickable && 'cursor-pointer user-select-none'
+        clickable && 'cursor-pointer user-select-true'
     )
 
     const cardBodyClasss = classNames('card-body', bodyClass)
@@ -82,7 +82,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-    clickable: false,
+    clickable: true,
     headerBorder: true,
     footerBorder: true,
 }

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import classNames from 'classnames'
 import withHeaderItem from 'utils/hoc/withHeaderItem'
 import { Dialog, Button } from 'components/ui'
-import { apiGetSearchResult } from 'services/CommonService'
+// import { apiGetSearchResult } from 'services/CommonService'
 import useThemeClass from 'utils/hooks/useThemeClass'
 import navigationIcon from 'configs/navigation-icon.config'
 import debounce from 'lodash/debounce'
@@ -63,7 +63,7 @@ const ListItem = (props) => {
                     >
                         {icon && navigationIcon[icon]}
                     </div>
-                    <div className="text-gray-900 dark:text-gray-300">
+                    <div className="text-gray-900 dark:text-gray-900">
                         <Highlighter
                             autoEscape
                             highlightClassName={classNames(
@@ -117,7 +117,7 @@ export const Search = ({ className }) => {
         if (noResult) {
             setNoResult(false)
         }
-        const respond = await apiGetSearchResult({ query })
+        const respond = await searchResult ({ query })
         if (respond.data) {
             if (respond.data.length === 0) {
                 setNoResult(true)
