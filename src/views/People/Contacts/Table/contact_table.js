@@ -71,16 +71,16 @@ const fuzzyFilter = (row, columnId, value, addMeta) => {
     return itemRank.passed
 }
 
-const Filtering_Contacts = () => {
+const Filtering = () => {
     const [columnFilters, setColumnFilters] = React.useState([])
     const [globalFilter, setGlobalFilter] = React.useState('')
 
     const columns = useMemo(
         () => [
-            { header: '', accessorKey: '' },
-            { header: '', accessorKey: ''},
-            { header: '', accessorKey: '' },
-            { header: '', accessorKey: 't' },
+            { header: 'Contact Name', accessorKey: 'contactName' },
+            { header: 'Full Name', accessorKey: 'fullName'},
+            { header: 'Marketing Status', accessorKey: 'marketingStatus' },
+            { header: 'Last Update', accessorKey: 'lastUpdate' },
         ],
         []
     )
@@ -117,7 +117,7 @@ const Filtering_Contacts = () => {
                 value={globalFilter ?? ''}
                 onChange={(value) => setGlobalFilter(String(value))}
                 className="p-2 font-md shadow border border-block"
-                placeholder="Search Accounts..."
+                placeholder="Search Contacts..."
             />
             <Table>
                   
@@ -182,4 +182,4 @@ const Filtering_Contacts = () => {
     )
 }
 
-export default Filtering_Contacts
+export default Filtering

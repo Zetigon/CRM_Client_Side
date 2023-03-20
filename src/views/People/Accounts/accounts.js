@@ -70,9 +70,11 @@ ACCOUNTS
 
 
 {/* {{TABLE_ACCOUNTS}} */}
-<div className='container-wrap' id='account_table'>
-
+<div className='container-wrapper' id='account_table'>
+ <Card className="grid container-grid">
   <Filtering/>
+ </Card>
+
 
 
 </div>

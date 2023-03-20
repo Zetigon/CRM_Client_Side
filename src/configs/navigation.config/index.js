@@ -31,7 +31,7 @@ const navigationConfig = [
 
                 {
                 key: 'groupMenu.account',
-                path: '/people/accounts',
+                path: '/',
                 title: 'Accounts',
                 translateKey: 'account',
                 icon: '',
