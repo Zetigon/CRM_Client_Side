@@ -9,7 +9,7 @@ function accounts() {
 <div className=' container-wrap'>
 
 {/* ACCOUNTS_OVERALL_STATUS */}
-<h3 className='text-slate-400  font-semibold'>
+<h3 className='text-slate-400 font-semibold'>
 ACCOUNTS
 </h3>
 <br/>

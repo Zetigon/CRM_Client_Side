@@ -50,7 +50,7 @@ function DebouncedInput({
                 />
                 <span className='flex ml-2'>
                     <Button variant="solid" color="green-500"  className="text-center right-2" icon={<HiOutlineUserAdd/>}>
-                        Add Account
+                        New Contact
                     </Button>
                 </span>  
             </div>
