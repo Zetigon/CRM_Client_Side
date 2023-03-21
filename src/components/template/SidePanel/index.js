@@ -43,7 +43,7 @@ export const SidePanel = (props) => {
                 onClose={closePanel}
                 onRequestClose={closePanel}
                 placement={direction === 'rtl' ? 'left' : 'right'}
-                width={375}
+                width={500}
             >
                 <SidePanelContent callBackClose={closePanel} />
             </Drawer>

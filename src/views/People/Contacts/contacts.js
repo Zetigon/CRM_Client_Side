@@ -7,11 +7,20 @@ function contacts() {
     <div className='container-wrapper'>
 
       <Card>  
-        <h4 className='text-slate-400'>
-         <b>RECENT CONTACTS</b>  
-        </h4>
+        <h2 className='text-slate-400'>
+         <b>CONTACTS</b>  
+        </h2>
     
+      <Card>
+
+
+      </Card>
+
+
         <div className='grid grid-container'>
+          <p className='text-slate-300 pt-2'>
+         <b>Recent Contacts</b>  
+        </p>
           <Filtering/>
         </div>
       </Card>

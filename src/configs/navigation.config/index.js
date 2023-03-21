@@ -13,7 +13,7 @@ const navigationConfig = [
         path: '/',
         title: 'APPS',
         translateKey: 'apps',
-        icon: 'app-icon',
+        icon: 'peopleIcon',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [],
         subMenu: [

@@ -121,9 +121,9 @@ SideNav.propTypes = {
 }
 
 SideNav.defaultProps = {
-    themed: true,
-    darkMode: false,
-    themeColor: '',
+    themed: false,
+    darkMode: true,
+    themeColor: 'light',
 }
 
 export default SideNav

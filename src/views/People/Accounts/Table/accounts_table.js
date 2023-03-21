@@ -47,7 +47,7 @@ function DebouncedInput({
                     onChange={(e) => setValue(e.target.value)}
                 />
                 <span className='flex ml-2'>
-                    <Button variant="solid" color="green-500"  className="text-center right-2" icon={<HiOutlineUserAdd/>}>
+                    <Button variant="solid" color="default"  className="text-center text-slate-400 right-2" icon={<HiOutlineUserAdd/>}>
                         Add New
                     </Button>
                 </span>  
@@ -117,7 +117,7 @@ const Filtering = () => {
             <DebouncedInput
                 value={globalFilter ?? ''}
                 onChange={(value) => setGlobalFilter(String(value))}
-                className="p-2 font-md shadow border border-block"
+                className="text-slate-400 p-2 font-md shadow border border-block"
                 placeholder="Search Accounts..."
             />
             <Table>

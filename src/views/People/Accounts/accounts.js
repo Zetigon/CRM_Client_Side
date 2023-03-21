@@ -1,67 +1,110 @@
 import React from 'react'
 import { Card} from 'components/ui';
-import {HiOutlineUserGroup,HiOutlineUser,HiOutlineUserPlus} from 'react-icons/hi2'
+import {HiOutlineUserGroup,HiOutlineUser,HiOutlineChartBar} from 'react-icons/hi2'
 import Filtering from './Table/accounts_table';
 
 function accounts() {
   return (
 
-<div className=' container-wrap'>
+<div className=' container-wrapper'>
 
-{/* ACCOUNTS_OVERALL_STATUS */}
-<h3 className='text-slate-400 font-semibold'>
-ACCOUNTS
+<h3 className='text-slate-400 pb-2 font-bold'>
+<b>ACCOUNTS</b>
 </h3>
-<br/>
 
-<div className="flex-1 grid grid-cols-3 gap-3 bg-light">
+<Card className="grid pt-2">
+{/* ACCOUNTS_OVERALL_STATUS */}
+<div className='grid container'>
+  <h5 className='text-slate-300'>Dashboard</h5>
+</div>
+<br/>
+<hr/>
+<div className="grid  grid-cols-3 gap-3 bg-light">
 
 {/* Total Number of  Accounts */}
-<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
-  <div className='total_container text-center text-4xl text-slate-400'>
+<Card variant className=' text-lg text-slate-400  font-mono mb-3' >
+
+<div className='grid container text-center text-4xl text-slate-400'>
      
 {/* Total_Accounts */}
-  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
 
-  <h4 className='text-left -bottom-4 text-slate-400'>Total Accounts</h4>    
-  
- <center><HiOutlineUserGroup className='text-center avatar-circle  pb-2' size={75}/></center> 
+  <center><HiOutlineUserGroup className='right avatar-circle  pb-2 ' size={75}/></center>  <hr/>
+  <p className='text-left text-sm text-slate-300 '>Total Accounts:  
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0
+    </p> 
 
+  </p>  
+
+    <small className='text-left text-sm text-slate-300 '>Percentage:   
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0.00 %
+    </p> 
+
+  </small>
 </div>
+
 </Card>
+
 
 {/* Active Accounts */}
-<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
-  <div className='total_container text-center text-4xl text-slate-400'>
+<Card variant className=' text-lg text-slate-400  font-mono mb-3' >
+
+<div className='grid container text-center text-4xl text-slate-400'>
      
-{/* Total_Accounts */}
-  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
+{/* Total_UserAccounts */}
+ 
+  <center><HiOutlineUser className='right avatar-circle  pb-2 ' size={75}/></center> 
+<hr/>
+  <small className='text-left text-sm text-slate-300 '>Active Users:  
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0
+    </p> 
 
-  <h4 className='text-left -bottom-4 text-slate-400'>
-   <span className='fluid  w-20  p-1 radius-15'>
-    Active Accounts</span> 
-    </h4>    
-  
- <center><HiOutlineUser className='bg-blue-400 text-white text-center avatar-circle  pb-2' size={75}/></center> 
+  </small>  
 
+    <small className='text-left text-sm text-slate-300 '>Percentage:   
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0.00 %
+    </p> 
+
+  </small>
 </div>
+
 </Card>
+     
+
 
 {/* New Accounts */}
-<Card variant className=' text-2xl text-slate-400  font-mono mb-3' >
-  <div className='total_container text-center text-4xl text-slate-400'>
+<Card variant className=' text-lg text-slate-400  font-mono mb-3' >
+
+<div className='grid container text-center text-4xl text-slate-400'>
      
-{/* Total_Accounts */}
-  <h1  className='container animate-pulse text-left text-4xl text-slate-400'>0</h1> 
+{/* Total_UserAccounts */}
+ 
+  <center><HiOutlineChartBar className='text-right avatar-circle  pb-2 ' size={75}/></center> 
+<hr/>
+  <small className='text-left text-sm text-slate-300 '>Sales<small><i> (Weekly|Monthly)</i></small>  
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0
+    </p> 
 
-  <h4 className='text-left -bottom-4 text-slate-400'>New Accounts</h4>    
-  
- <center><HiOutlineUserPlus className='bg-green-400 text-white text-center avatar-circle  pb-2' size={75}/></center> 
+  </small>  
 
+    <small className='text-left text-sm text-slate-300 '>Percentage:   
+    <p className='animate-pulse text-left text-md text-slate-400'>
+      0.00 %
+    </p> 
+
+  </small>
 </div>
+
 </Card>
+     
 
 </div>
+
+</Card>
 {/* END ACCOUNTS_OVERALL_STATUS */}
 
 
