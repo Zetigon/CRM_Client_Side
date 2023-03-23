@@ -17,10 +17,10 @@ import {
     HiOutlineBan,
     HiOutlineMailOpen,
 } from 'react-icons/hi'
-import {
-    apiGetNotificationList,
-    apiGetNotificationCount,
-} from 'services/CommonService'
+// import {
+//    apiGetNotificationList,
+//    apiGetNotificationCount,
+// } from 'services/CommonService'
 import { Link } from 'react-router-dom'
 import isLastChild from 'utils/isLastChild'
 import useTwColorByName from 'utils/hooks/useTwColorByName'
@@ -107,7 +107,7 @@ export const Notification = ({ className }) => {
     const direction = useSelector((state) => state.theme.direction)
 
     const getNotificationCount = useCallback(async () => {
-        const resp = await apiGetNotificationCount()
+        const resp = await '' ()
         if (resp.data.count > 0) {
             setNoResult(false)
             setUnreadNotification(true)
@@ -123,7 +123,7 @@ export const Notification = ({ className }) => {
     const onNotificationOpen = useCallback(async () => {
         if (notificationList.length === 0) {
             setLoading(true)
-            const resp = await apiGetNotificationList()
+            const resp = await ''()
             setLoading(false)
             setNotificationList(resp.data)
         }

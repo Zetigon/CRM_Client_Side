@@ -37,6 +37,9 @@ const IndeterminateCheckbox = ((props) => {
     return <Checkbox className="mb-0" ref={ref} onChange={(_, e) => handleChange(e)} {...rest} />
 })
 
+
+
+
 const DataTable = forwardRef((props, ref) => {
     const {
         skeletonAvatarColumns,

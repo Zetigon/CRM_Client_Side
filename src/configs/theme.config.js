@@ -9,13 +9,13 @@ export const themeConfig = {
 
     themeColor: MODE_LIGHT,
     direction: THEME_ENUM.DIR_LTR,
-    mode: THEME_ENUM.NAV_MODE_LIGHT,
+    mode: THEME_ENUM.MODE_DARK,
     locale: 'en',
     primaryColorLevel: 600,
     cardBordered: false,
     panelExpand: false,
     controlSize: 'md',
-    navMode: THEME_ENUM.NAV_MODE_LIGHT,
+    navMode: THEME_ENUM.MODE_LIGHT,
     layout: {
         type: THEME_ENUM.LAYOUT_TYPE_MODERN,
         sideNavCollapse: false,
