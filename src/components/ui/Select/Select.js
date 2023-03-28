@@ -67,7 +67,7 @@ const DefaultClearIndicator = (props) => {
 const DefaultLoadingIndicator = ({ selectProps }) => {
     const { themeColor } = selectProps
     return (
-        <Spinner className={`select-loading-indicatior text-${themeColor}`} />
+        <Spinner className={`select-loading-indicator text-${themeColor}`} />
     )
 }
 
@@ -167,7 +167,7 @@ const Select = React.forwardRef((props, ref) => {
                             ? twColor.gray['600']
                             : twColor.gray['300'],
                     neutral80: twColor.gray['700'],
-                    primary25: twColor[themeColor]['50'],
+                    primary25: twColor[themeColor]['25'],
                     primary50: twColor[themeColor]['100'],
                     primary: twColor[themeColor][primaryColorLevel],
                 },

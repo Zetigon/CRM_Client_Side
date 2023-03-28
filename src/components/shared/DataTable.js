@@ -119,10 +119,10 @@ const DataTable = forwardRef((props, ref) => {
                             indeterminate={table.getIsSomeRowsSelected()}
                             onChange={table.getToggleAllRowsSelectedHandler()}
                             onIndeterminateCheckBoxChange={(e) => {
-                                handleIndeterminateCheckBoxChange(
-                                    e.target.checked,
-                                    table.getRowModel().rows
-                                )
+                            handleIndeterminateCheckBoxChange(
+                            e.target.checked,
+                            table.getRowModel().rows
+                            )
                             }}
                         />
                     ),
@@ -133,10 +133,10 @@ const DataTable = forwardRef((props, ref) => {
                             indeterminate={row.getIsSomeSelected()}
                             onChange={row.getToggleSelectedHandler()}
                             onCheckBoxChange={(e) =>
-                                handleCheckBoxChange(
-                                    e.target.checked,
-                                    row.original
-                                )
+                            handleCheckBoxChange(
+                            e.target.checked,
+                            row.original
+                            )
                             }
                         />
                     ),

@@ -1,11 +1,10 @@
-import React from 'react'
 import ApiService from './ApiService'
 
 
 
 export async function ApiContactServices(data) {
   return ApiService.fetchData({
-    url: 'http://localhost:8000/api/contacts/',
+    url: 'http://127.0.0.1:8000/api/accounts',
     method: 'post',
     data
       

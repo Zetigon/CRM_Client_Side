@@ -9,7 +9,7 @@ const navigationConfig = [
    
   
     {
-        key: 'appsMenu',
+        key: 'groupMenu.peopleMenu',
         path: '/',
         title: 'APPS',
         translateKey: 'apps',
@@ -31,7 +31,7 @@ const navigationConfig = [
 
                 {
                 key: 'groupMenu.account',
-                path: '/',
+                path: '/people/accounts',
                 title: 'Accounts',
                 translateKey: 'account',
                 icon: '',
@@ -90,10 +90,10 @@ const navigationConfig = [
     },
           
     {
-                key: 'groupMenu.peopleMenu',
-                path: '/people/payments',
+                key: 'groupMenu.paymentMenu',
+                path: '/payments',
                 title: 'Payments',
-                translateKey: 'nav.groupMenu.collapse.peopleMenu',
+                translateKey: 'groupMenu.collapse.paymentMenu',
                 icon: 'paymentIcon',
                 type: NAV_ITEM_TYPE_COLLAPSE,
                 authority: [],

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card} from 'components/ui';
 import {HiOutlineUserGroup,HiOutlineUser,HiOutlineChartBar} from 'react-icons/hi2'
-import Filtering from './Table/accounts_table';
 
 function accounts() {
   return (
@@ -115,7 +114,6 @@ function accounts() {
 {/* {{TABLE_ACCOUNTS}} */}
 <div className='container-wrapper' id='account_table'>
  <Card className="grid container-grid">
-  <Filtering/>
  </Card>
 
 
