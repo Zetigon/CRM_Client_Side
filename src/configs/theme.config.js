@@ -7,17 +7,17 @@ import { MODE_DARK, MODE_LIGHT, NAV_MODE_LIGHT, THEME_ENUM } from 'constants/the
 
 export const themeConfig = {
 
-    themeColor: 'light',
+    themeColor: THEME_ENUM.MODE_LIGHT,
     direction: THEME_ENUM.DIR_LTR,
-    mode: THEME_ENUM.LAYOUT_TYPE_MODERN,
+    mode: THEME_ENUM.MODE_LIGHT,
     locale: 'en',
     primaryColorLevel: 900,
     cardBordered: false,
     panelExpand: false,
     controlSize: 'md',
-    navMode: THEME_ENUM.MODE_LIGHT,
+    navMode: MODE_LIGHT,
     layout: {
-        type: THEME_ENUM.LAYOUT_TYPE_STACKED_SIDE,
+        type: 'modern',
         sideNavCollapse: false,
     },
 

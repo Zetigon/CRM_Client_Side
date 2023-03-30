@@ -5,6 +5,7 @@ import { DataTable } from 'components/shared'
 import debounce from 'lodash/debounce'
 import axios from 'axios'
 import { REQUEST_ACCOUNTS_LIST_API } from 'constants/api.constant'
+
 const Query = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
@@ -43,18 +44,18 @@ const Query = () => {
     const columns = [
         {
             header: 'Name',
-            accessorKey: 'name',
+            accessorKey: 'accounts.name',
         },
         {
-            header: 'Email',
-            accessorKey: 'email',
+            header: 'Address',
+            accessorKey: 'accounts.email',
         },
         {
             header: '',
-            id: 'action',
+            id: 'accounts.id',
             cell: (props) => (
                 <Button size="xs" onClick={() => handleAction(props)}>
-                    Action
+                    View Account
                 </Button>
             ),
         },
@@ -80,7 +81,7 @@ const Query = () => {
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true)
-            const response = await axios.get(REQUEST_ACCOUNTS_LIST_API, tableData)
+            const response = await axios.post(REQUEST_ACCOUNTS_LIST_API, tableData)
             if (response.data) {
                 setData(response.data.data)
                 setLoading(false)

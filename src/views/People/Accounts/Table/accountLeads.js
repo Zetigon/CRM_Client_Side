@@ -1,3 +1,4 @@
+
 import React, { useMemo, useState, useEffect } from 'react'
 import { Table, Input } from 'components/ui'
 import {
@@ -12,12 +13,9 @@ import {
     flexRender,
 } from '@tanstack/react-table'
 import { rankItem } from '@tanstack/match-sorter-utils'
-import { REQUEST_CONTACTS_LIST_API } from 'constants/api.constant'
-import Button from 'components/ui/Buttons'
-import { HiOutlineUserAdd } from 'react-icons/hi'
+import { REQUEST_ACCOUNTS_LIST_API } from 'constants/api.constant'
+
 const { Tr, Th, Td, THead, TBody, Sorter } = Table
-
-
 
 function DebouncedInput({
     value: initialValue,
@@ -37,22 +35,17 @@ function DebouncedInput({
         }, debounce)
 
         return () => clearTimeout(timeout)
-    }, [debounce, onChange, value])
+    }, [value])
 
     return (
-        <div className="pt-5 flex justify-end">
-            <div className="flex items-center mb-5">
+        <div className="flex justify-start">
+            <div className="flex items-center mb-4">
                 <span className="mr-2">Search:</span>
                 <Input
                     {...props}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                 />
-                <span className='flex ml-2'>
-                    <Button variant="solid" color="green-500"  className="text-center right-2" icon={<HiOutlineUserAdd/>}>
-                        New Contact
-                    </Button>
-                </span>  
             </div>
         </div>
     )
@@ -71,21 +64,22 @@ const fuzzyFilter = (row, columnId, value, addMeta) => {
     return itemRank.passed
 }
 
-const ContactsTable = () => {
+const AccountLeads= () => {
     const [columnFilters, setColumnFilters] = React.useState([])
     const [globalFilter, setGlobalFilter] = React.useState('')
 
     const columns = useMemo(
         () => [
-            { header: 'Contact Name', accessorKey: 'contacts.first_name' },
-            { header: 'Full Name', accessorKey: 'contacts.fullName'},
-            { header: 'Marketing Status', accessorKey: 'contacts.marketing_status' },
-            { header: 'Last Update', accessorKey: 'contacts.date_created' },
+            { header: 'NAME', accessorKey: 'leads.name' },
+            { header: 'STATUS', accessorKey: 'leads.status' },
+            { header: 'EMAIL', accessorKey: 'leads.email' },
+            { header: 'CREATED TIME', accessorKey: 'leads.createTime' },
+            { header: 'ASSIGNEE', accessorKey: 'leads.assignedBy' },
         ],
         []
     )
 
-    const [data] = React.useState(() => REQUEST_CONTACTS_LIST_API                                                                                                                                                                                                                                                                                                                  )
+    const [data] = React.useState(() => REQUEST_ACCOUNTS_LIST_API)
 
     const table = useReactTable({
         data,
@@ -108,7 +102,7 @@ const ContactsTable = () => {
         getFacetedUniqueValues: getFacetedUniqueValues(),
         getFacetedMinMaxValues: getFacetedMinMaxValues(),
         debugHeaders: true,
-        debugColumns: true,
+        debugColumns: false,
     })
 
     return (
@@ -116,11 +110,10 @@ const ContactsTable = () => {
             <DebouncedInput
                 value={globalFilter ?? ''}
                 onChange={(value) => setGlobalFilter(String(value))}
-                className="p-2 font-md shadow border border-block"
-                placeholder="Search Contacts..."
+                className="p-2 font-lg shadow border border-block"
+                placeholder="Search Leads..."
             />
             <Table>
-                  
                 <THead>
                     {table.getHeaderGroups().map((headerGroup) => (
                         <Tr key={headerGroup.id}>
@@ -182,4 +175,5 @@ const ContactsTable = () => {
     )
 }
 
-export default ContactsTable
+export default AccountLeads
+

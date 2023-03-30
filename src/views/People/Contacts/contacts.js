@@ -1,8 +1,7 @@
 import React from 'react'
 //import Filtering from '../Contacts/Table/contact_table'
-import { Card,Table } from 'components/ui'
-import Filtering from './Table/contact_table'
-
+import { Card } from 'components/ui'
+import ContactData from './Table/contactsData'
 function contacts() {
   return (
     <div className='container-wrapper'>
@@ -24,8 +23,7 @@ function contacts() {
     <b>Recent Contacts</b>  
     </p>
 
-    
-   <Filtering/>
+    <ContactData/>
  
     </div>
     </Card>
