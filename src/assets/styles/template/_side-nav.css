@@ -12,11 +12,11 @@
 }
 
 .side-nav-light {
-    @apply bg-gray-800 border-r border-gray-800;
+    @apply bg-gray-800 border-r border-gray-500;
 }
 
 .side-nav-dark {
-    @apply bg-gray-800 border-r border-gray-600;
+    @apply bg-gray-800 border-r border-gray-500;
 }
 
 .side-nav-transparent {

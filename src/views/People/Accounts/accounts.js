@@ -3,13 +3,12 @@ import { Badge, Card, Tag} from 'components/ui';
 import {HiOutlineUserGroup,HiOutlineUser,HiOutlineUserPlus, HiArrowTrendingUp} from 'react-icons/hi2'
 import AccountData from './Table/accountsData';
 //import AccountsTable from './Table/accounts_table';
-import Query from './Table/accounts_table';
-import AccountLeads from './Table/accountLeads';
+
 
 function accounts() {
   return (
 
-<div className='container-wrapper'>
+<div className='grid container-wrapper'>
 
 <h3 className='text-slate-600 pb-2 font-bold'>
 <b>Accounts</b>
@@ -36,7 +35,10 @@ function accounts() {
       </span>  
 <span className='text-center p-2 text-md text-slate-400'>
   Total Accounts<br/>
-     <span>0</span> 
+     <span>
+           <h3 className="font-bold text-black">345,7</h3> 
+
+      </span> 
   </span>    
         <div className='text-left p-5 text-md text-slate-400'>
       <Tag className="bg-blue-100 text-blue-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
@@ -64,11 +66,14 @@ function accounts() {
 
   <div className='flex text-center text-sm text-slate-300 '>  
       <span className=" top ">
-        <HiOutlineUser className='text-white bg-blue-400 p-2  avatar-circle mr-0   ' size={65}/> 
+        <HiOutlineUser className='text-white bg-blue-400 p-2  avatar-circle mr-0   ' size={50}/> 
       </span>  
 <span className='text-center p-2 text-md text-slate-400'>
   Active Users<br/>
-     <span>0</span> 
+     <span>
+           <h3 className="font-bolder text-black">170</h3> 
+
+      </span> 
   </span>    
      <div className='text-left p-5 text-md text-slate-400'>
       <Tag className="bg-red-100 text-red-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
@@ -108,9 +113,9 @@ function accounts() {
     </span> 
   </span>    
      <div className='grid text-right p-3 text-md text-slate-400'>
-      <Tag className="bg-emerald-100 pl-1 pr-1 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
+      <Tag className="bg-emerald-100 p-1  text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
      <span><HiArrowTrendingUp className='start gap-1'/></span>   <span>0.00 </span>
-      </Tag><small className='text-xsm'>(this month)</small>
+      </Tag><small className='font-xs'>(this month)</small>
     </div> 
 
   </div>  
@@ -136,8 +141,8 @@ function accounts() {
 
 {/* {{TABLE_ACCOUNTS}} */}
 <div className='container-wrapper' id='account_table'>
-  <p className='text-slate-500 pb-2 pt-5 font-bold '>
-  Recent Accounts
+  <p className='text-slate-400 pb-2 pt-5 '>
+  Recent Accounts:
 </p>
  
  {/* {{ACCOUNTS TABLE}} */}
@@ -151,21 +156,7 @@ function accounts() {
 </div>
 
 
-{/* {{TABLE_ACCOUNTS_LEADS}} */}
-<div className='container-wrapper pt-5' id='account_table'>
-  <p className='text-slate-500 pb-2 pt-5 font-bold '>
-  Leads
-</p>
- 
- {/* {{ACCOUNTS LEADS}} */}
- 
-  <Card className="grid container-grid">
-    <AccountLeads/>
-  </Card>
 
-
-
-</div>
 
 
 

@@ -213,7 +213,7 @@ const navigationConfig = [
         path: '/crm',
         title: 'CRM',
         translateKey: 'crm',
-        icon: 'app-icon',
+        icon: 'userCrm',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [],
         subMenu: [
@@ -242,7 +242,7 @@ const navigationConfig = [
                     {
                         key: 'groupMenu.collapse.people',
                         path: '/group-collapse-menu-item-view-1',
-                        title: 'People',
+                        title: 'Calendar',
                         translateKey: 'nav.groupMenu.collapse.people',
                         icon: '',
                         type: NAV_ITEM_TYPE_ITEM,
@@ -252,7 +252,7 @@ const navigationConfig = [
                     {
                         key: 'groupMenu.collapse.payments',
                         path: '/group-collapse-menu-item-view-2',
-                        title: 'Payments',
+                        title: 'Mails',
                         translateKey: 'nav.groupMenu.collapse.payments',
                         icon: '',
                         type: NAV_ITEM_TYPE_ITEM,
@@ -264,7 +264,7 @@ const navigationConfig = [
                     {
                         key: 'groupMenu.collapse.marketingMenu',
                         path: '/group-collapse-menu-item-view-2',
-                        title: 'Marketing',
+                        title: 'Appointments',
                         translateKey: 'nav.groupMenu.collapse.marketingMenu',
                         icon: '',
                         type: NAV_ITEM_TYPE_ITEM,

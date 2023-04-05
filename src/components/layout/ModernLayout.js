@@ -20,7 +20,7 @@ const HeaderActionsEnd = () => {
     return (
         <>
             <SidePanel />
-            <UserDropdown hoverable={true} />
+            <UserDropdown hoverable={false} />
         </>
     )
 }

@@ -1,16 +1,41 @@
 import React, { Component} from "react";
 import { REQUEST_ACCOUNTS_LIST_API } from "constants/api.constant";
-import { Button, Input, Table } from "components/ui";
+import { Button, Input, Table, Pagination,Select } from "components/ui";
 import Th from "components/ui/Table/Th";
 import Tr from "components/ui/Table/Tr";
 import THead from "components/ui/Table/THead";
 import TBody from "components/ui/Table/TBody";
 import Td from "components/ui/Table/Td";
-import { HiOutlineUserAdd } from "react-icons/hi";
+import { HiOutlineUserAdd,HiCheckCircle, HiOutlineSearch } from "react-icons/hi";
+import {
+    useReactTable,
+    getCoreRowModel,
+    getFilteredRowModel,
+    getPaginationRowModel,
+    flexRender,
+} from '@tanstack/react-table'
+import { values } from "lodash";
+import { data } from "autoprefixer";
 
 
 
+    const onPaginationChange = (page) => {
+        this.setPageIndex(page - 1)
+    }
 
+    const onSelectChange = (value) => {
+        this.setPageSize(Number(value))
+    }
+const totalData = data.length
+
+
+const pageSizeOption = [
+    { value: 10, label: '10 / page' },
+    { value: 20, label: '20 / page' },
+    { value: 30, label: '30 / page' },
+    { value: 40, label: '40 / page' },
+    { value: 50, label: '50 / page' },
+]
 class accountData extends Component {
 
   constructor(props) {
@@ -44,19 +69,29 @@ class accountData extends Component {
         
    
     <div>
-            <div className="flex justify-start">
+            <div className="flex justify-start mb-0">
                 <div className="flex items-center">
-                    <span className="mr-2">Search:</span>
-                        <Input placeholder="Search Accounts..."/>   
+                        <Input icon={<HiOutlineSearch/>} placeholder="Search Accounts..."/>   
                 </div>
+
+
+                <div className="flex items-center">
+
+
+                </div>
+
+                
+
+
+
             </div>
 
-                    <div className="flex-wrap flex xl:flex gap-2 justify-end pt-0">
+                    <div className="flex-wrap flex xl:flex gap-0 justify-end mb-2">
                         <div className="flex items-center">
-                    <Button className=" text-slate-400 mr-2" icon={<HiOutlineUserAdd/>}> 
+                    <Button size="sm" className=" text-slate-400 mr-2" icon={<HiOutlineUserAdd/>}> 
                         <span>
                             <span>
-                         <a href="/people/accounts/add_account" >ADD ACCOUNT</a>   
+                         <a href="/people/accounts/add_account" >add new</a>   
                             </span>
                         </span> 
                         
@@ -74,9 +109,9 @@ class accountData extends Component {
 
 
        <div>
-            <Table>  
+            <Table className="table-flex">  
               
-                <THead>
+                <THead className="table-virtual">
                     <Tr>
                     <Th>ACCOUNT NAME</Th>
                     <Th>ACCOUNT ADDRESS</Th>
@@ -88,16 +123,32 @@ class accountData extends Component {
 
                 <TBody>
                 {this.state.data.map(accounts => (
-                    <Tr>
+                    <Tr className="table-hover table-flex">
                         <Td>{accounts.name} </Td>
                         <Td>{accounts.address}</Td>
-                        <Td>{accounts.status}</Td>
+                        
+                        <Td>  
+                        <span className="flex p-1 items-center text-emerald-500 text-sm">
+                            <HiCheckCircle />
+                            {accounts.status}
+                        </span>
+                        </Td>
                         <Td>{accounts.holder}</Td>
                     </Tr>
                      ))}
 
                 </TBody>
                 </Table>
+
+
+                <div className="flex  items-center avatar-rounded justify-between mt-4 bg-gray-50">
+                <Pagination
+                  
+                />
+                <div style={{ minWidth: 130 }}>
+                
+                </div>
+            </div>
                 </div>
     </div>
              

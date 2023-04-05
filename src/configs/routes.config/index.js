@@ -52,6 +52,14 @@ export const protectedRoutes = [
         ),
         authority: [],
     },
+       {
+        key: 'Crm',
+        path: '/crm/dashboard',
+        component: React.lazy(() =>
+            import('views/Crm/dashboard/crmDashboard')
+        ),
+        authority: [],
+    },
     {
         key: 'groupMenu.collapse.item2',
         path: '/group-collapse-menu-item-view-2',

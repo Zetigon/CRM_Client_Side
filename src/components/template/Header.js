@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import { HEADER_HEIGHT_CLASS } from 'constants/theme.constant'
 import { Search } from './Search'
+import { HiOutlineBellAlert } from 'react-icons/hi2'
 
 const Header = (props) => {
     const { headerStart, headerEnd, headerMiddle, className, container } = props
@@ -23,11 +24,14 @@ const Header = (props) => {
                  
                 {headerMiddle && (
                     <div className="header-action header-action-middle">
+                        
                         {headerMiddle}
                     </div>
                 )}
-                <div className="header-action header-action-end">
-                    {headerEnd}
+                <div className="header-action header-action-end"> <HiOutlineBellAlert size={32}/>
+                    {headerEnd}                       
+                    
+
                 </div>
             </div>
         </header>
