@@ -16,30 +16,33 @@ function taskTab() {
                     <TabNav value="myTaskTab">My Tasks</TabNav>
                     <TabNav value="assignedTab">Assigned</TabNav>
                     <TabNav value="notesTab">Notes</TabNav>
-                    <TabNav value = "dueDateTab">Due Date</TabNav>
+                    <TabNav value = "dueDateTab">Task due date</TabNav>
                 </TabList>
                 <div className="p-4">
                     <TabContent value="myTaskTab">
                         <div className='grid-container' id="myTaskTabContent">
 
+                            <span className='text-slate-300-center'>
+                                <center>No new tasks.......</center>
+                            </span>
                                 
                         </div>
                     </TabContent>
                     <TabContent value="assignedTab">
-                        <p>
-                                ASSIGNED:
-                        </p>
+                              <span className='text-slate-300-center'>
+                                <center>No assigned tasks.......</center>
+                            </span>
                     </TabContent>
                     <TabContent value="notesTab">
-                        <p>
-                                NOTES:
-                        </p>
+                            <span className='text-slate-300-center'>
+                                <center>No new notes......</center>
+                            </span>
                     </TabContent>
 
                     <TabContent value="dueDateTab">
-                        <p>
-                                DUE_DATE:
-                        </p>
+                             <span className='text-slate-300-center'>
+                                <center>No tasks due yet.......</center>
+                            </span>
 
                     </TabContent>
 
