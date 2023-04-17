@@ -54,8 +54,8 @@ const SignInForm = (props) => {
             <Formik
                 // Remove this initial value
                 initialValues={{
-                    userName: 'admin',
-                    password: '123Qwe',
+                    userName: '',
+                    password: '',
                     rememberMe: true,
                 }}
                 validationSchema={validationSchema}
@@ -109,7 +109,7 @@ const SignInForm = (props) => {
                             <Button
                                 block
                                 loading={isSubmitting}
-                                variant="solid"
+                                variant="contained"
                                 type="submit"
                             >
                                 {isSubmitting ? 'Signing in...' : 'Sign In'}

@@ -64,7 +64,7 @@ const MapChart = (props) => {
         <ComposableMap
             style={{ transform: 'translateY(20px)' }}
             data-tip=""
-            height={480}
+            height={600}
             projectionConfig={{ scale: 300 }}
         >
             <Geographies geography={mapSource}>

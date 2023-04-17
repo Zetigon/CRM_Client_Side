@@ -1,35 +1,27 @@
 import { Card } from 'components/ui'
 import React from 'react'
-import { HiDocumentAdd } from 'react-icons/hi'
+import { HiOutlineDocumentAdd } from 'react-icons/hi'
 
 function notes() {
   return (
-    <div>
-      <h1 className='text-slate-400'>Notes</h1>
+ <div>
+      <div className='container'>
+        <h1 className='text-slate-400 pt-5'>Notes</h1>
+      </div>
+
+    <div className='grid-container'>
+<span>
 
 
+<HiOutlineDocumentAdd className='text-slate-300' size="lg"/>
+<span>
+  <p className='text-slate-300 pt-1'>
+    <center>Create a new note...</center></p>
+</span>
 
-    <div className='grid container' id="createNote">
-    
-    <row className="col-grid"> 
-     <Card size="sm" width="150">
+</span>
 
-    <HiDocumentAdd/>
-
-    </Card>
-</row>
-    
-    <row className="grid"> 
-     <Card size="sm" width="150">
-
-    <HiDocumentAdd/>
-
-    </Card>
-</row>
-  
-    </div>
-
-
+    </div>      
     </div>
   )
 }

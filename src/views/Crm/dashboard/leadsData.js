@@ -70,11 +70,10 @@ const AccountLeads= () => {
 
     const columns = useMemo(
         () => [
-            { header: 'NAME', accessorKey: 'leads.name' },
-            { header: 'STATUS', accessorKey: 'leads.status' },
-            { header: 'EMAIL', accessorKey: 'leads.email' },
-            { header: 'CREATED TIME', accessorKey: 'leads.createTime' },
-            { header: 'ASSIGNEE', accessorKey: 'leads.assignedBy' },
+            { header: 'Account Name', accessorKey: 'leads.name' },
+            { header: 'First and Last Name', accessorKey: 'leads.status' },
+            { header: 'Marketing Status', accessorKey: 'leads.email' },
+            { header: 'Last Updated', accessorKey: 'leads.createTime' },
         ],
         []
     )

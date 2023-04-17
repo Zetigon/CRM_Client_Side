@@ -6,10 +6,11 @@ function contacts() {
   return (
     <div className='container-wrapper'>
 
+           <div className='container'>
+        <h1 className='text-slate-400 pt-5'>Contacts</h1>
+      </div>
       <Card>  
-        <h2 className='text-slate-400'>
-         <b>CONTACTS</b>  
-        </h2>
+  
     
 
     <Card>

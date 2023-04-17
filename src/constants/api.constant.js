@@ -3,12 +3,19 @@ export const REQUEST_HEADER_AUTH_KEY = 'Authorization'
 
 
 
+
+
 // PEOPLE_API REQUEST_URL:
 export const REQUEST_ACCOUNTS_LIST_API = 'http://127.0.0.1:8000/api/accounts/'
 export const REQUEST_CONTACTS_LIST_API = 'http://127.0.0.1:8000/api/contacts/'
 export const REQUEST_TASKS_LIST_API = 'http://127.0.0.1:8000/api/tasks/'
 export const REQUEST_NOTES_LIST_API = 'http://127.0.0.1:8000/api/notes/'
+
+
+// ORGANIZATION_API:
 export const REQUEST_ORGANIZATIONS_LIST_API = 'http://127.0.0.1:8000/api/organization/'
+export const REQUEST_ORGANIZATIONS_BILLING_API = 'http://127.0.0.1:8000/api/organization-billing/'
+
 
 
 // PAYMENTS_API REQUEST_URL:

@@ -9,10 +9,9 @@ function accounts() {
   return (
 
 <div className='grid container-wrapper'>
-
-<h3 className='text-slate-600 pb-2 font-bold'>
-<b>Accounts</b>
-</h3>
+           <div className='container'>
+        <h1 className='text-slate-400 pt-5'>Accounts</h1>
+      </div>
 
 <Card className="container pt-0">
 {/* ACCOUNTS_OVERALL_STATUS */}
@@ -25,28 +24,32 @@ function accounts() {
 {/* Total Number of  Accounts */}
 <Card variant className='grid  text-lg text-slate-400  font-mono mb-3' >
 
-<div className='grid container text-center text-4xl text-slate-400'>
+<div className='container-grid text-center text-4xl text-slate-400'>
      
-{/* Total_Accounts */}
+            {/* Total_Accounts */}
 
-  <div className='flex text-center text-sm text-slate-300 '>  
-      <span className=" top ">
-        <HiOutlineUserGroup className='text-white bg-blue-900 p-2  avatar-circle mr-0   ' size={50}/> 
-      </span>  
-<span className='text-center p-2 text-md text-slate-400'>
-  Total Accounts<br/>
-     <span>
-           <h3 className="font-bold text-black">345,7</h3> 
+            <div className='flex grid text-center text-sm text-slate-400'>  
+              <div className="justify-center ">
+              <center>
+                <HiOutlineUserGroup className='text-center  text-white bg-blue-900 p-2  avatar-circle mr-0   ' size={50}/> 
+                
+                </center> 
+              </div>  
+              <div className='justify-items-center p-2 text-md text-slate-400'>
+                Total Accounts
+                <br/>
+                <span>
+                <h3 className="font-bold text-black">0</h3> 
+                </span> 
+              </div>    
+              <div className='container-grid center p-2 text-sm text-slate-400'>
+                <Tag className=" bg-blue-100 text-blue-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
+                0.00 
+                </Tag>
+      
+              </div> 
 
-      </span> 
-  </span>    
-        <div className='text-left p-5 text-md text-slate-400'>
-      <Tag className="bg-blue-100 text-blue-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
-      0.00 
-      </Tag>
-    </div> 
-
-  </div>  
+            </div>  
 
   
 </div>
@@ -71,7 +74,7 @@ function accounts() {
 <span className='text-center p-2 text-md text-slate-400'>
   Active Users<br/>
      <span>
-           <h3 className="font-bolder text-black">170</h3> 
+           <h3 className="font-bolder text-black">0</h3> 
 
       </span> 
   </span>    

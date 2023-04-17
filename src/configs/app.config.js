@@ -1,10 +1,10 @@
 const appConfig = {
     apiPrefix: '/api',
-    authenticatedEntryPath: '/home',
+    authenticatedEntryPath: '/crm/dashboard',
     unAuthenticatedEntryPath: '/sign-in',
     tourPath: '/',
     locale: 'en',
-    enableMock: false,
+    enableMock: true,
 }
 
 export default appConfig

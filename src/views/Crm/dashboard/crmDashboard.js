@@ -4,6 +4,8 @@ import { Badge, Card, Tag } from 'components/ui'
 import { Chart, RegionMap } from 'components/shared'
 import CrmWorldMap from '../Crm_map/crm_map'
 import ReactApexChart from 'react-apexcharts'
+import MapChartWithTooltip from './chartMap'
+import SimpleDonut from './donutChart'
 function crmDashboard() {
   return (
     <div>
@@ -25,17 +27,28 @@ function crmDashboard() {
 
 
 
-    <div className="grid grid-rows-3 grid-flow-col gap-4">
-      <div width={550} className="row-span-3 ...">
-        <span className=' flex grid'>
+    <div className="grid grid-rows-12 grid-flow-col gap-0">
+     
+      <div  className="row-span-3 col-span-1 ...">
+
+        <Card>
+      <p className='text-slate-600 pb-5 pt-0 font-bold '>
+            <b>Leads By Countries </b>
+        </p> 
+        <RegionMap></RegionMap>
+        </Card>
+
+
+      </div> <div  className="row col-span-1...">
+        <span className='grid'>
           <Card>
           <p className='text-slate-600 pb-5 pt-0 font-bold '>
-            <b>Leads By Countries </b>
           </p> 
-          <span className='container'>
-            
+          <span className='grid'>
+                        <b>E-Mails</b>
+
             <span>
-            <RegionMap  />
+              <SimpleDonut/>
             </span>  
           
             <span className='grid'>
@@ -44,27 +57,6 @@ function crmDashboard() {
               
 
 
-            <div className="p-2"> 
-            
-
-            {/* COUNTRY_LISTED_NAME */}
-            <span>
-              
-                 <Tag prefix prefixClass="bg-emerald-500">
-                  South Africa 
-                </Tag>
-              </span>
-                
-        
-
-            {/* COUNTRY_LISTED__PERCENTAGE */}
-            <span className='p-5 right inline justify-end'>
-              <span>
-              0.00% 
-              </span> 
-            </span> 
-
-            </div>
             </li>
 
             </ul>
@@ -77,24 +69,13 @@ function crmDashboard() {
         </span>
 
       </div>
-      <div className="row-span-3 col-span-1 ...">
-
-        <Card>
-      <p className='text-slate-600 pb-5 pt-0 font-bold '>
-        <b>E-mails Sent </b>
-        </p> 
-        <Chart type='pie'></Chart>
-        </Card>
-
-
-      </div>
     </div>
 
 
   {/* {{TABLE_ACCOUNTS_LEADS}} */}
     <div className='container-wrapper pt-5' id='account_table'>
         <p className='text-slate-500 pb-2 pt-5 font-bold '>
-        Leads
+        ACCOUNTS
         </p>
  
   {/* {{ACCOUNTS LEADS}} */}

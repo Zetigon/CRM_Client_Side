@@ -133,7 +133,7 @@ class accountData extends Component {
                             {accounts.status}
                         </span>
                         </Td>
-                        <Td>{accounts.holder}</Td>
+                        <Td>{accounts.email}</Td>
                     </Tr>
                      ))}
 
