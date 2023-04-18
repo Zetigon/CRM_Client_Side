@@ -6,7 +6,7 @@ module.exports = function(app) {
     app.use(
         '/',
             createProxyMiddleware({
-            target: '/',  // <--- config the url based on your backend server
+            target: 'http://localhost:8000',  // <--- config the url based on your backend server
             changeOrigin: true,
         })
     )
