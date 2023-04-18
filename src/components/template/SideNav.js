@@ -122,7 +122,7 @@ SideNav.propTypes = {
 
 SideNav.defaultProps = {
     themed: false,
-    darkMode: true,
+    darkMode: false,
     themeColor: 'light',
 }
 

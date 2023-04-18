@@ -15,7 +15,7 @@ export const NAV_MODE_TRANSPARENT = 'transparent'
 
 export const SIDE_NAV_WIDTH = 290
 export const SIDE_NAV_COLLAPSED_WIDTH = 100
-export const SPLITTED_SIDE_NAV_MINI_WIDTH = 80
+export const SPLITTED_SIDE_NAV_MINI_WIDTH = 60
 export const SPLITTED_SIDE_NAV_SECONDARY_WIDTH = 250
 export const SIDE_NAV_CONTENT_GUTTER = 'px-1'
 export const LOGO_X_GUTTER = 'px-2:py-3'
