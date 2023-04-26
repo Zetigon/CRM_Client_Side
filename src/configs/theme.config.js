@@ -14,7 +14,7 @@ export const themeConfig = {
     primaryColorLevel: 600,
     cardBordered: false,
     panelExpand: false,
-    controlSize: 'md',
+    controlSize: 'lg',
     navMode: NAV_MODE_LIGHT,
     layout: {
         type: 'modern',
