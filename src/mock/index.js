@@ -16,7 +16,7 @@ export default function mockServer({ environment = 'test' }) {
             })
         },
         routes() {
-            this.urlPrefix = ''
+            this.urlPrefix = '/api'
             this.namespace = ''
             this.passthrough((request) => {
                 let isExternal = request.url.startsWith('http')
